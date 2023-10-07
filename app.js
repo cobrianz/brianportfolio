@@ -24,3 +24,11 @@ function contact(event) {
     }, 1000);
 
 } 
+let isModalOpen = false;
+
+function toggleModal() {
+    
+    (isModalOpen) ? document.body.classList.remove('modal__open') : 
+    document.body.classList += ' modal__open';
+    isModalOpen = !isModalOpen;
+}
