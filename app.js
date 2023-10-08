@@ -3,6 +3,14 @@
 service_ic6e6mk
 
 N_zB7QJt4YSPXyryW */
+let isModalOpen = false;
+let contrastToggle = false;
+
+
+function toggleContrast() {
+    contrastToggle = !contrastToggle;
+    (contrastToggle) ? document.body.classList += ' dark__theme' : document.body.classList.remove('dark__theme');
+}
 
 function contact(event) {
     event.preventDefault();
@@ -24,7 +32,6 @@ function contact(event) {
     }, 1000);
 
 } 
-let isModalOpen = false;
 
 function toggleModal() {
     
